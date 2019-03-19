@@ -1,0 +1,19 @@
+{
+    "background": {
+        "page": "background.html"
+      },
+    "content_scripts" : [
+        {
+            "js":[ "info-glads.user.js" ], 
+            "matches":[ "http://*/*" ], 
+            "run_at":"document_end"  
+        }
+    ], 
+    "description" : "", 
+    "name" : "My Userscript", 
+    "permissions" : [ "http://*/*", "unlimitedStorage"],
+    "version" : "2",
+    "manifest_version": 2,
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+    
+}
